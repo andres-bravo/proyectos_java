@@ -19,6 +19,7 @@ public class LoteriaPrimitiva {
 	}
 	
 	public static void main(String[] args) {
+		//Genera 6 números no repetidos
 		int[] numeros = new int[6];
 		int contador = 0;
 		while (contador<6) {
@@ -30,11 +31,5 @@ public class LoteriaPrimitiva {
 		}
 		//System.out.println("posicion: " +Arrays.binarySearch(numeros, 0));
 		mostrar(numeros);
-		/*Arrays.sort(numeros);
-		for (int i:numeros) {
-			System.out.println(i);
-			//System.out.println("posicion: " + Arrays.binarySearch(numeros, 50));
-		}*/
-		
 	}
 }
