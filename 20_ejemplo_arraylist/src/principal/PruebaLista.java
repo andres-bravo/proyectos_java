@@ -43,6 +43,9 @@ public class PruebaLista {
 		  Veremos que imprime "python version" ya que ha sido modificado al modificar el array
 		  Esto sucede porque StringBuilder es mutable*/
 		System.out.println(sb.get(2));
+		StringBuilder sb1;
+		
+		
 	}
 
 }
