@@ -3,6 +3,7 @@ package loteria_primitiva;
 import java.util.Arrays;
 public class LoteriaPrimitiva {
 	private static boolean repetido(int[] numeros, int numero) {
+		//Comprueba si el número pertenece al array
 		for (int i:numeros) {
 			if (numero==i) {
 				return true;
