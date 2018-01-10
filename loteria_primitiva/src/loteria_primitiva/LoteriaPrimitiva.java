@@ -12,6 +12,7 @@ public class LoteriaPrimitiva {
 		return false;
 	}
 	private static void mostrar(int[] numeros) {
+		//Metodo para mostrar el array
 		Arrays.sort(numeros);
 		for (int i:numeros) {
 			System.out.println(i);
