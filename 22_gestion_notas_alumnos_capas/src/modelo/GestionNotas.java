@@ -30,7 +30,7 @@ public class GestionNotas {
 	public Double[] devolverNotas() {
 		//Este método no muestra sino que devuelve un array de Notas para que capa presentación
 		//lo muestre, lo creo como un array de Double y no tipo primitivo double ya que es más fácil
-		//al convertir el ArrayList
+		//al convertir el ArrayList, podría recibir un ArrayList también 
 		return notas.toArray(new Double[0]);
 	}
 }

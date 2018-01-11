@@ -13,7 +13,8 @@ public class PruebaLista {
 			System.out.println(i);
 		}
 		//num.forEach(System.out.println());
-		//Convierto el ArrayList a un Array
+		//Convierto el ArrayList a un Array, lo hago con este método toArray(T[]) porque el otro devuelve
+		//Array de object
 		Integer[] miarray = num.toArray(new Integer[0]);
 		for (Integer i:miarray) {
 			System.out.println(i);
