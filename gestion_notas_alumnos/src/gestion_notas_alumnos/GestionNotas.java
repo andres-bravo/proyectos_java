@@ -15,11 +15,15 @@ public class GestionNotas {
 			System.out.println(i);
 		}
 	}
-	private static void verAprobados() {
+	private static int verAprobados() {
+		int aprobados = 0;
 		for (Double i:notas) {
-			if (i>=5) 
+			if (i>=5) {
 				System.out.println(i);
-		}		
+				aprobados++;
+			}
+		}
+		return aprobados;
 	}
 	private static void mostrarMedia() {
 		double media=0;
@@ -52,7 +56,7 @@ public class GestionNotas {
 	    		break;
 	    	case 2:
 	    		//Llamar a visualizarAprobados
-	    		verAprobados();
+	    		System.out.println(verAprobados());
 	    		break;
 	    	case 3:
 	    		//Llamar a notaMedia
