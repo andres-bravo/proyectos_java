@@ -40,11 +40,19 @@ public class Contactos {
 	    	case 2:
 	    		//Buscar contacto
 	    		nombre = gcontactos.buscarContacto(email);
-	    		System.out.println(nombre);
+	    		if (nombre!=null) {
+	    			System.out.println("Nombre Contacto:" + nombre);
+	    		}else {
+	    			System.out.println("Contacto no encontrado");
+	    		}
 	    		break;
 	    	case 3:
-	    		//Llamar a notaMedia
-	    		System.out.println("Nota Media:" + gnotas.media());
+	    		//Eliminar
+	    		if (gcontactos.eliminarContacto(email)) {
+	    			System.out.println("Contacto eliminado");
+	    		}else {
+	    		}
+	    		
 	    		break;
 	    	case 4:
 	    		//Llamar a mostrarTodas
