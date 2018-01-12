@@ -6,8 +6,12 @@ import java.util.HashMap;
 public class GestionContactos {
 	//Atributos que necesito en esta capa
 	//almacen notas
-	HashMap<String,String> contactos = new HashMap<>();
+	HashMap<String,String> contactos; 
 	//Metodos que necesito
+	//Constructor
+	public GestionContactos(){
+		contactos = new HashMap<>();
+	}
 	//Funciones del programa
 	public boolean agregarContacto(String email, String nombre) {
 		if (!contactos.containsKey(email)) {
