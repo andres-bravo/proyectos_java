@@ -22,9 +22,9 @@ public class Eliminacion {
 		//numeros.removeIf((Integer n)->{return n<15;}); //Expresion larga
 		numeros.removeIf(n->n<15); //Expresion reducida
 		
-		for (Integer i:numeros) {
-			System.out.println(i);
-		}
+		//Recorro con funcion lambda
+		numeros.forEach(n->System.out.println(n));
+
 	}
 
 }
