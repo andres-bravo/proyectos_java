@@ -6,6 +6,8 @@ public class PruebaLista {
 
 	public static void main(String[] args) {
 		ArrayList<Integer> num = new ArrayList<>();
+		ArrayList p = new ArrayList<>();
+		p.add("hola");
 		num.add(25);
 		num.add(10);
 		num.add(1, 50);
